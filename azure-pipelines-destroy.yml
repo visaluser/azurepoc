@@ -1,0 +1,24 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+ 
+ - task: AzurePowerShell@5
+   inputs:
+     azureSubscription: 'Free Trial (06a981a6-ce1c-421e-a6e8-431e5dcd12af)'
+     ScriptType: 'InlineScript'
+     Inline: 'az login --service-principal --username  $(username) --password $(password) --tenant $(tenant) '
+     azurePowerShellVersion: 'LatestVersion'
+ - task: AzurePowerShell@5
+   inputs:
+     azureSubscription: 'Free Trial (06a981a6-ce1c-421e-a6e8-431e5dcd12af)'
+     ScriptType: 'InlineScript'
+     Inline: 'az group delete --resource-group $(resourcename) --yes'
+     azurePowerShellVersion: 'LatestVersion'
