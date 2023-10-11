@@ -8,6 +8,6 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    backendAzureRmResourceGroupName: 'visal-resourec-group'
+    backendAzureRmResourceGroupName: 'visal-resource-group'
     backendAzureRmStorageAccountName: 'visalstorage'
     backendAzureRmContainerName: 'visalreg'  
