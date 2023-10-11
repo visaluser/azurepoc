@@ -8,6 +8,6 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    backendAzureRmResourceGroupName: 'Firstresource'
-    backendAzureRmStorageAccountName: 'tstateterraform01'
-    backendAzureRmContainerName: 'tfstate'  
+    backendAzureRmResourceGroupName: 'visal-resourec-group'
+    backendAzureRmStorageAccountName: 'visalstorage'
+    backendAzureRmContainerName: 'visalreg'  
