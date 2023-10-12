@@ -1,8 +1,8 @@
 variable "resourcename" {
-  default     = "k8s-resources"
+  default     = "visal-resource-group"
 }
 variable "clustername" {
-  default     = "kubernetes-aks1"
+  default     = "kubernetes-cluster"
 }
 variable "location" {
   default     = "East US"
