@@ -11,8 +11,8 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'ae0c3ecb-aa99-4f72-bca8-5c4932367354'
-  imageRepository: 'new'
-  containerRegistry: 'newvisalreg.azurecr.io'
+  imageRepository: 'newvisalrepo'
+  containerRegistry: 'visalreg.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
 
