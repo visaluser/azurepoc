@@ -1,5 +1,5 @@
 variable "resourcename" {
-  default     = "visal-resource-group"
+  default     = "visal-resource"
 }
 variable "clustername" {
   default     = "kubernetes-cluster"
